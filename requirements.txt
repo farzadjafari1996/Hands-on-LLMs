@@ -1,0 +1,10 @@
+# Tested with Python 3.13 (gensim 4.4.0 has no Windows wheel for Python 3.14 yet).
+# Lab F001 (word2vec) is CPU-only and needs nothing else.
+gensim==4.4.0
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.1
+matplotlib==3.11.2
+jupyter==1.1.1
+ipykernel==7.4.0
+nbconvert==7.17.2

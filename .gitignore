@@ -1,0 +1,24 @@
+# downloaded data and trained artifacts (re-created by the notebooks)
+data/
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.model
+*.npy
+outputs/
+
+# notebook / python clutter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
