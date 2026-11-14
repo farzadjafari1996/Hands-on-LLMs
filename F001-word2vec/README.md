@@ -23,7 +23,7 @@ Accuracy keeps improving only if vector size and training data grow together.
    - CBOW and Skip-gram with the paper's settings: hierarchical softmax, a fixed 4+4 window for CBOW and a random window of up to 10 for Skip-gram;
    - the same two models with the later negative sampling and subsampling (Mikolov et al. 2013b).
 
-   It then evaluates them on the paper's analogy set, split into semantic and syntactic questions (Table 3 style), with a per-category breakdown. It also runs a vector-size × data-size grid (Table 2 style) and some *king − man + woman* examples.
+     It then evaluates them on the paper's analogy set, split into semantic and syntactic questions (Table 3 style), with a per-category breakdown. It also runs a vector-size × data-size grid (Table 2 style) and some *king − man + woman* examples.
 3. **Twist: a social-impact probe.** Builds a Bolukbasi-style (2016) *he–she* direction with PCA and projects ~55 occupation words onto it. It then asks four questions:
    - Do CBOW and Skip-gram rank jobs the same way? (Spearman ρ)
    - Which model is more biased? (*DirectBias*)
@@ -74,12 +74,12 @@ Twist (reference run):
 
 *To fill in after running on my laptop.*
 
-| Model | Semantic | Syntactic | Total |
-|---|---|---|---|
-| CBOW-HS | | | |
-| Skip-gram-HS | | | |
-| CBOW-NS | | | |
-| Skip-gram-NS | | | |
+| Model        | Semantic | Syntactic | Total |
+| ------------ | -------- | --------- | ----- |
+| CBOW-HS      | 17.13    | 27.54     | 24.09 |
+| Skip-gram-HS | 44.02    | 29.83     | 34.55 |
+| CBOW-NS      | 19.47    | 35.59     | 30.24 |
+| Skip-gram-NS | 27.57    | 32.31     | 30.74 |
 
 **Twist findings:**
 
