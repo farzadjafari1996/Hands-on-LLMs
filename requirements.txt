@@ -8,3 +8,11 @@ matplotlib==3.11.2
 jupyter==1.1.1
 ipykernel==7.4.0
 nbconvert==7.17.2
+# Lab I002 (saliency maps) needs torch, torchvision and Pillow.
+# PyPI torch is +cpu, and 2.15 has no CUDA wheel. +cu130 needs a CUDA 13 driver (this machine: 13.3).
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.14.1+cu130
+torchvision==0.29.1+cu130
+Pillow==13.0.0
+# Lab I002 twist
+transformers==5.23.0

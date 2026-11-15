@@ -17,6 +17,7 @@ Every notebook has a `QUICK_MODE` flag at the top. With `True` it runs fast, whi
 | ID | Paper | Year | Topic | Twist | Status |
 |---|---|---|---|---|---|
 | [F001](F001-word2vec/) | Mikolov et al., *Efficient Estimation of Word Representations in Vector Space* ([1301.3781](https://arxiv.org/abs/1301.3781)) | 2013 | CBOW vs Skip-gram, analogy test set | Gender–occupation bias probe: CBOW vs Skip-gram, the analogy "exclusion trick", seed stability | ✅ ready |
+| [I002](I002-saliency-maps/) | Simonyan, Vedaldi & Zisserman, *Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps* ([1312.6034](https://arxiv.org/abs/1312.6034)) | 2013 | Class model visualisation, gradient saliency maps | GPT-2 small text saliency for gender bias + static embedding bias check | ✅ ready |
 
 Paper IDs follow my reading list's strands: **F** fundamentals, **I** interpretability/xAI, **A** agents, **E** evaluation, **V** vision/multimodal, **S** society.
 
@@ -27,7 +28,10 @@ paper-labs/
 ├── README.md            # this file
 ├── requirements.txt     # pinned Python packages
 ├── .gitignore           # data/, models/, outputs/, checkpoints are never committed
-└── F001-word2vec/
+├── F001-word2vec/
+│   ├── README.md        # claim, what the lab does, how to run, results
+│   └── lab.ipynb        # the notebook (committed with outputs cleared)
+└── I002-saliency-maps/
     ├── README.md        # claim, what the lab does, how to run, results
     └── lab.ipynb        # the notebook (committed with outputs cleared)
 ```
